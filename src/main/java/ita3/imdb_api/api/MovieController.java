@@ -22,11 +22,11 @@ public class MovieController {
     @GetMapping("/api")
     public String apiDocumentation() {
         return "Movie API Endpoints:" +
-                "\n- GET /api/movie: List all movies" +
-                "\n- GET /api/movie/{id}: Get a movie by its ID" +
-                "\n- POST /api/movie: Create a new movie" +
-                "\n- PUT /api/movie/{id}: Update an existing movie" +
-                "\n- DELETE /api/movie/{id}: Delete a movie";
+                "\n- GET /api/movies: List all movies" +
+                "\n- GET /api/movies/{id}: Get a movie by its ID" +
+                "\n- POST /api/movies: Create a new movie" +
+                "\n- PUT /api/movies/{id}: Update an existing movie" +
+                "\n- DELETE /api/movies/{id}: Delete a movie";
     }
 
     @GetMapping("/api/movies")
